@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Brightful Plumbing Concerns | Plumber in Port Harcourt</title>
+<meta name="description" content="Leak repairs, blocked drains, pipe installations and fittings for homes and businesses in Port Harcourt. Call 0810 110 2829 or send a request on WhatsApp.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=Figtree:wght@400;500;600&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Plumber","name":"Brightful Plumbing Concerns","telephone":"+2348101102829","address":{"@type":"PostalAddress","streetAddress":"Mile 3, Tipper Park, Mgbuoba","addressLocality":"Port Harcourt","addressRegion":"Rivers","postalCode":"500272","addressCountry":"NG"},"aggregateRating":{"@type":"AggregateRating","ratingValue":"4.6","reviewCount":"11"}}
+</script>
+<style>
+:root{
+  --ink:#04141a;
+  --deep:#0a2a33;
+  --panel:rgba(5,22,28,.78);
+  --water:#4fd1e8;
+  --copper:#d98b4a;
+  --copper-deep:#a55d26;
+  --text:#e8f4f6;
+  --muted:#a3bec4;
+  --line:rgba(79,209,232,.2);
+  --display:"Bricolage Grotesque","Trebuchet MS",Arial,sans-serif;
+  --body:"Figtree","Segoe UI",Roboto,Arial,sans-serif;
+  color-scheme:dark;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:76px}
+body{
+  background:var(--ink) radial-gradient(120% 80% at 80% 0%,#0d3a46 0%,var(--ink) 60%) fixed;
+  color:var(--text);font-family:var(--body);font-size:17px;line-height:1.6;
+  -webkit-font-smoothing:antialiased;overflow-x:hidden;
+}
+#scene{position:fixed;inset:0;width:100vw;height:100vh;z-index:0;display:block}
+.no3d #scene{display:none}
+main,header,footer{position:relative;z-index:2}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--water);outline-offset:3px;border-radius:6px}
+
+/* water level progress */
+.level{position:fixed;right:10px;top:12vh;height:76vh;width:5px;border-radius:9px;background:rgba(255,255,255,.08);z-index:5;overflow:hidden}
+.level i{position:absolute;left:0;right:0;bottom:0;height:100%;background:linear-gradient(var(--water),#1a8aa0);transform-origin:bottom;transform:scaleY(0)}
+
+/* nav */
+.nav{position:fixed;top:0;left:0;right:0;z-index:10;background:linear-gradient(rgba(4,20,26,.92),rgba(4,20,26,.6));backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.nav .in{width:min(1180px,92vw);margin:auto;height:64px;display:flex;align-items:center;justify-content:space-between;gap:16px}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none;font-family:var(--display);font-weight:800;font-size:18px;letter-spacing:-.01em}
+.brand svg{width:28px;height:28px;flex:none}
+.nav ul{display:flex;gap:26px;list-style:none;font-weight:500;font-size:15px}
+.nav ul a{text-decoration:none;color:var(--muted)}
+.nav ul a:hover{color:var(--text)}
+.btn{display:inline-flex;align-items:center;gap:10px;padding:14px 26px;border-radius:999px;font-weight:600;font-size:16px;text-decoration:none;border:2px solid transparent;cursor:pointer;font-family:var(--body);transition:transform .15s,background .15s}
+.btn:hover{transform:translateY(-2px)}
+.btn-copper{background:var(--copper);color:#1c0e03}
+.btn-copper:hover{background:#e79a5b}
+.btn-ghost{border-color:var(--line);color:var(--text);background:rgba(4,20,26,.5)}
+.btn-ghost:hover{border-color:var(--water)}
+.nav .btn{padding:9px 18px;font-size:15px}
+
+/* hero */
+.hero{min-height:100svh;display:flex;align-items:center;padding:110px 0 70px;background:linear-gradient(90deg,rgba(4,20,26,.85) 0%,rgba(4,20,26,.55) 45%,transparent 75%)}
+.wrap{width:min(1180px,92vw);margin:auto}
+.hero h1{font-family:var(--display);font-weight:800;font-size:clamp(2.6rem,6.4vw,5.2rem);line-height:1;letter-spacing:-.035em;max-width:11.5em}
+.hero p.lead{margin-top:24px;max-width:33em;font-size:clamp(1.05rem,1.6vw,1.25rem);color:#cfe3e7}
+.hero .cta{display:flex;flex-wrap:wrap;gap:14px;margin-top:34px}
+.rating{display:flex;align-items:center;gap:12px;margin-top:38px;color:var(--muted);font-size:15px}
+.stars{color:var(--copper);letter-spacing:2px;font-size:18px}
+.scrollhint{margin-top:54px;font-size:14px;color:var(--muted);display:flex;align-items:center;gap:12px}
+.scrollhint b{display:block;width:2px;height:34px;background:linear-gradient(var(--water),transparent);border-radius:2px}
+
+/* panels */
+section{padding:56px 0}
+.panel{background:var(--panel);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border:1px solid var(--line);border-radius:26px;padding:clamp(26px,4vw,52px);will-change:transform;transform-origin:50% 0}
+.narrow{max-width:640px}
+h2{font-family:var(--display);font-weight:800;font-size:clamp(1.9rem,3.6vw,2.9rem);line-height:1.08;letter-spacing:-.025em}
+.sub{margin-top:14px;color:var(--muted);max-width:36em}
+
+/* service flip cards */
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:36px}
+.card{all:unset;display:block;box-sizing:border-box;height:220px;perspective:1000px;cursor:pointer}
+.card:focus-visible{outline:3px solid var(--water);outline-offset:4px;border-radius:16px}
+.face-wrap{position:relative;display:block;width:100%;height:100%;transform-style:preserve-3d;transition:transform .7s cubic-bezier(.2,.8,.2,1)}
+.face{position:absolute;inset:0;display:flex;flex-direction:column;justify-content:flex-end;gap:8px;padding:24px;border-radius:16px;backface-visibility:hidden;-webkit-backface-visibility:hidden}
+.front{background:linear-gradient(160deg,#0f3a46,#082129);border:1px solid var(--line);border-left:6px solid var(--copper)}
+.back{background:linear-gradient(160deg,var(--copper),var(--copper-deep));color:#1c0e03;transform:rotateY(180deg);justify-content:center}
+.face h3{font-family:var(--display);font-size:1.3rem;font-weight:800;line-height:1.15;letter-spacing:-.01em}
+.face span.d{font-size:15px;line-height:1.45}
+.front span.d{color:var(--muted)}
+.face svg{width:34px;height:34px;margin-bottom:auto;stroke:var(--water);fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.card.flipped .face-wrap{transform:rotateY(180deg)}
+@media (hover:hover){.card:hover .face-wrap{transform:rotateY(180deg)}}
+.tip{margin-top:20px;font-size:14px;color:var(--muted)}
+
+/* steps */
+.steps{list-style:none;margin-top:32px;display:grid;gap:0;counter-reset:s}
+.steps li{position:relative;padding:0 0 30px 64px;counter-increment:s}
+.steps li:last-child{padding-bottom:0}
+.steps li::before{content:counter(s);position:absolute;left:0;top:0;width:42px;height:42px;border-radius:50%;background:var(--copper);color:#1c0e03;font-family:var(--display);font-weight:800;display:grid;place-items:center;font-size:18px}
+.steps li::after{content:"";position:absolute;left:20px;top:46px;bottom:4px;width:2px;background:linear-gradient(var(--copper),transparent)}
+.steps li:last-child::after{display:none}
+.steps h3{font-family:var(--display);font-size:1.2rem;font-weight:800;line-height:1.2}
+.steps p{color:var(--muted);margin-top:4px}
+
+/* areas */
+.chips{display:flex;flex-wrap:wrap;gap:10px;margin-top:28px}
+.chips li{list-style:none;padding:8px 16px;border-radius:999px;border:1px solid var(--line);background:rgba(79,209,232,.07);font-size:15px}
+
+/* contact */
+.contact{display:grid;grid-template-columns:1fr 1.15fr;gap:clamp(24px,4vw,56px)}
+.info dl{margin-top:26px;display:grid;gap:20px}
+.info dt{font-weight:600;color:var(--water);font-size:14px}
+.info dd{font-size:18px}
+.info dd a{text-decoration:none;border-bottom:1px solid var(--copper)}
+form{display:grid;gap:16px}
+label{display:grid;gap:6px;font-weight:600;font-size:14px;color:var(--muted)}
+input,select,textarea{font:inherit;font-size:16px;color:var(--text);background:rgba(4,20,26,.7);border:1px solid var(--line);border-radius:12px;padding:13px 14px;width:100%}
+select option{background:#0a2a33}
+textarea{min-height:110px;resize:vertical}
+input:focus,select:focus,textarea:focus{outline:3px solid var(--water);outline-offset:1px;border-color:var(--water)}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.note{font-size:14px;color:var(--muted)}
+
+footer{padding:40px 0 60px;color:var(--muted);font-size:15px}
+footer .wrap{border-top:1px solid var(--line);padding-top:26px;display:flex;flex-wrap:wrap;justify-content:space-between;gap:16px}
+
+.right{display:flex;align-items:center;gap:10px}
+.lang{background:rgba(4,20,26,.5);border:1px solid var(--line);color:var(--text);border-radius:999px;padding:8px 14px;font:inherit;font-size:14px;font-weight:600;cursor:pointer}
+.lang:hover{border-color:var(--water)}
+.mbar{display:none;position:fixed;left:0;right:0;bottom:0;z-index:10;gap:10px;padding:10px 12px;background:rgba(4,20,26,.94);backdrop-filter:blur(8px);border-top:1px solid var(--line)}
+.mbar .btn{flex:1;justify-content:center;padding:12px 14px}
+@media (max-width:700px){
+  .right .btn{display:none}
+  .mbar{display:flex}
+  footer{padding-bottom:96px}
+}
+@media (max-width:900px){
+  .nav ul{display:none}
+  .hero{background:linear-gradient(rgba(4,20,26,.75),rgba(4,20,26,.5))}
+  .grid{grid-template-columns:1fr 1fr}
+  .contact{grid-template-columns:1fr}
+}
+@media (max-width:560px){
+  body{font-size:16px}
+  .grid{grid-template-columns:1fr}
+  .two{grid-template-columns:1fr}
+  .brand span{font-size:15px}
+  .level{display:none}
+}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  .face-wrap,.btn{transition:none}
+}
+</style>
+</head>
+<body>
+<canvas id="scene" aria-hidden="true"></canvas>
+<div class="level" aria-hidden="true"><i id="levelFill"></i></div>
+
+<header class="nav">
+  <div class="in">
+    <a class="brand" href="#top" aria-label="Brightful Plumbing Concerns, home">
+      <svg viewBox="0 0 32 32" aria-hidden="true"><path d="M16 2C16 2 6 13.5 6 20a10 10 0 0 0 20 0C26 13.5 16 2 16 2z" fill="#4fd1e8"/><path d="M11 20.5a5 5 0 0 0 5 5" stroke="#04141a" stroke-width="2.4" fill="none" stroke-linecap="round"/></svg>
+      <span>Brightful Plumbing</span>
+    </a>
+    <ul>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#process">How it works</a></li>
+      <li><a href="#areas">Areas</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="right">
+      <button class="lang" id="langBtn" type="button" aria-label="Switch to Nigerian Pidgin">Pidgin</button>
+      <a class="btn btn-copper" href="tel:08101102829">Call 0810 110 2829</a>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+  <div class="hero">
+    <div class="wrap">
+      <h1>Water where it belongs. Not on your floor.</h1>
+      <p class="lead">Brightful Plumbing Concerns repairs leaks, clears blocked drains and installs pipes and fittings for homes and businesses in Port Harcourt.</p>
+      <div class="cta">
+        <a class="btn btn-copper" href="tel:08101102829">Call 0810 110 2829</a>
+        <a class="btn btn-ghost" href="#contact">Request a quote</a>
+      </div>
+      <div class="rating">
+        <span class="stars" aria-hidden="true">★★★★★</span>
+        <span>Rated 4.6 from 11 reviews on Google Maps</span>
+      </div>
+      <div class="scrollhint" aria-hidden="true"><b></b>Scroll to follow the pipe</div>
+    </div>
+  </div>
+
+  <section id="services">
+    <div class="wrap">
+      <div class="panel" data-tilt>
+        <h2>What we fix and fit</h2>
+        <p class="sub">Tap or hover a card to see the jobs we usually handle. Not listed? Call and ask.</p>
+        <div class="grid">
+          <button class="card" type="button" aria-pressed="false"><span class="face-wrap">
+            <span class="face front"><svg viewBox="0 0 24 24"><path d="M12 3s6 6.5 6 11a6 6 0 0 1-12 0c0-4.5 6-11 6-11z"/></svg><h3>Leak repairs</h3><span class="d">Dripping taps, burst pipes, wet walls and ceilings.</span></span>
+            <span class="face back"><h3>Typical jobs</h3><span class="d">Pipe and joint repairs, tap and cistern leaks, tracing the source of damp patches.</span></span>
+          </span></button>
+          <button class="card" type="button" aria-pressed="false"><span class="face-wrap">
+            <span class="face front"><svg viewBox="0 0 24 24"><path d="M4 8h16M7 8v4a5 5 0 0 0 10 0V8M12 17v4"/></svg><h3>Blocked drains</h3><span class="d">Slow sinks, toilets and outlets that back up.</span></span>
+            <span class="face back"><h3>Typical jobs</h3><span class="d">Unblocking sinks, showers and toilets, clearing drain lines and outlets.</span></span>
+          </span></button>
+          <button class="card" type="button" aria-pressed="false"><span class="face-wrap">
+            <span class="face front"><svg viewBox="0 0 24 24"><path d="M3 9h10a4 4 0 0 1 4 4v8M3 15h5M17 21h4M14 3v6"/></svg><h3>New pipework</h3><span class="d">Water lines for new homes, extensions and shops.</span></span>
+            <span class="face back"><h3>Typical jobs</h3><span class="d">Supply lines, kitchen and bathroom runs, PPR and PVC pipe installation.</span></span>
+          </span></button>
+          <button class="card" type="button" aria-pressed="false"><span class="face-wrap">
+            <span class="face front"><svg viewBox="0 0 24 24"><path d="M6 10h8a4 4 0 0 0 0-8M10 10v3M6 13h8v4a3 3 0 0 1-3 3H9a3 3 0 0 1-3-3z"/></svg><h3>Fittings and fixtures</h3><span class="d">Toilets, basins, showers and taps fitted properly.</span></span>
+            <span class="face back"><h3>Typical jobs</h3><span class="d">Replacing or installing WCs, wash basins, mixers, showers and kitchen sinks.</span></span>
+          </span></button>
+          <button class="card" type="button" aria-pressed="false"><span class="face-wrap">
+            <span class="face front"><svg viewBox="0 0 24 24"><rect x="5" y="3" width="14" height="12" rx="3"/><path d="M9 15v4h6v-4M12 19v2"/></svg><h3>Tanks and pumps</h3><span class="d">Overhead tanks, borehole lines and pump connections.</span></span>
+            <span class="face back"><h3>Typical jobs</h3><span class="d">Tank plumbing, float valves, pump connections and borehole-to-tank lines.</span></span>
+          </span></button>
+          <button class="card" type="button" aria-pressed="false"><span class="face-wrap">
+            <span class="face front"><svg viewBox="0 0 24 24"><circle cx="10" cy="10" r="6"/><path d="M15 15l6 6M10 7v3l2 1"/></svg><h3>Inspections</h3><span class="d">Checks that catch small problems before they flood.</span></span>
+            <span class="face back"><h3>Typical jobs</h3><span class="d">Leak checks and maintenance visits for homes, landlords and small businesses.</span></span>
+          </span></button>
+        </div>
+        <p class="tip">Every job is different, so we quote after we hear what is wrong.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="process">
+    <div class="wrap">
+      <div class="panel narrow" data-tilt>
+        <h2>From first call to running water</h2>
+        <ol class="steps">
+          <li><h3>Call or message us</h3><p>Tell us what is happening. Photos on WhatsApp help us understand faster.</p></li>
+          <li><h3>Agree the price</h3><p>You get a clear quote before work starts, so there are no surprises.</p></li>
+          <li><h3>We fix it</h3><p>We do the repair or installation and leave the area tidy.</p></li>
+          <li><h3>Check it together</h3><p>We test the work with you before we leave.</p></li>
+        </ol>
+      </div>
+    </div>
+  </section>
+
+  <section id="areas">
+    <div class="wrap">
+      <div class="panel narrow" data-tilt>
+        <h2>Working around Port Harcourt</h2>
+        <p class="sub">We are based at Mile 3, Mgbuoba. These are some of the areas people call us from.</p>
+        <ul class="chips">
+          <li>Mile 3</li><li>Mgbuoba</li><li>Diobu</li><li>Mile 1</li><li>Mile 4</li><li>Rumuola</li><li>Rumuokoro</li><li>Trans-Amadi</li><li>GRA</li><li>D-Line</li><li>Ada George</li><li>Eliozu</li>
+        </ul>
+        <p class="tip" style="margin-top:22px">Not on the list? Call to confirm we can reach you.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="wrap">
+      <div class="panel" data-tilt>
+        <div class="contact">
+          <div class="info">
+            <h2>Tell us what needs fixing</h2>
+            <p class="sub">Fill in the form and it opens as a WhatsApp message to us. Prefer to talk? Call now.</p>
+            <dl>
+              <div><dt>Phone</dt><dd><a href="tel:08101102829">0810 110 2829</a></dd></div>
+              <div><dt>Workshop</dt><dd>Mile 3, Tipper Park, Mgbuoba,<br>Port Harcourt 500272, Rivers State<br><a href="https://www.google.com/maps/search/?api=1&query=Brightful+Plumbing+Concerns+Mile+3+Tipper+Park+Mgbuoba+Port+Harcourt" target="_blank" rel="noopener">Get directions</a></dd></div>
+              <div><dt>Hours</dt><dd>Call ahead to confirm availability.</dd></div>
+            </dl>
+          </div>
+          <form id="quote">
+            <div class="two">
+              <label>Your name<input name="name" autocomplete="name" required></label>
+              <label>Phone number<input name="phone" type="tel" autocomplete="tel" inputmode="tel" required></label>
+            </div>
+            <div class="two">
+              <label>Your area<input name="area" placeholder="e.g. Mile 3"></label>
+              <label>Type of job
+                <select name="job">
+                  <option>Leak repair</option>
+                  <option>Blocked drain</option>
+                  <option>New pipework</option>
+                  <option>Fittings and fixtures</option>
+                  <option>Tank or pump</option>
+                  <option>Inspection</option>
+                  <option>Something else</option>
+                </select>
+              </label>
+            </div>
+            <label>What is the problem?<textarea name="details" placeholder="Describe what you see, and when it started."></textarea></label>
+            <button class="btn btn-copper" type="submit">Send on WhatsApp</button>
+            <p class="note">This opens WhatsApp with your message ready to send. Nothing is sent until you press send there.</p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<div class="mbar">
+  <a class="btn btn-copper" href="tel:08101102829">Call now</a>
+  <a class="btn btn-ghost" href="https://wa.me/2348101102829" target="_blank" rel="noopener">WhatsApp</a>
+</div>
+
+<footer>
+  <div class="wrap">
+    <span>Brightful Plumbing Concerns, Mile 3, Tipper Park, Mgbuoba, Port Harcourt</span>
+    <span><a href="tel:08101102829">0810 110 2829</a></span>
+  </div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script>
+(function(){
+  var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var canvas = document.getElementById('scene');
+  var fill = document.getElementById('levelFill');
+  var tilts = Array.prototype.slice.call(document.querySelectorAll('[data-tilt]'));
+
+  /* ---------- flip cards ---------- */
+  document.querySelectorAll('.card').forEach(function(c){
+    c.addEventListener('click', function(){
+      var on = c.classList.toggle('flipped');
+      c.setAttribute('aria-pressed', on ? 'true' : 'false');
+    });
+  });
+
+  /* ---------- English / Nigerian Pidgin ---------- */
+  var PCM = {
+    "Services":"Wetin we dey do","How it works":"How e dey work","Areas":"Where we dey go","Contact":"Reach us",
+    "Water where it belongs. Not on your floor.":"Water go where e suppose dey. No be your floor.",
+    "Brightful Plumbing Concerns repairs leaks, clears blocked drains and installs pipes and fittings for homes and businesses in Port Harcourt.":"Brightful Plumbing Concerns dey fix leak, open blocked drain and fix pipe and fittings for house and business for Port Harcourt.",
+    "Request a quote":"Ask for price",
+    "Rated 4.6 from 11 reviews on Google Maps":"4.6 rating from 11 reviews for Google Maps",
+    "Scroll to follow the pipe":"Scroll make you follow the pipe",
+    "What we fix and fit":"Wetin we dey fix and fit",
+    "Tap or hover a card to see the jobs we usually handle. Not listed? Call and ask.":"Tap or hover any card make you see the work we dey do. If e no dey here, just call us ask.",
+    "Leak repairs":"Leak repair","Dripping taps, burst pipes, wet walls and ceilings.":"Tap wey dey drip, pipe wey burst, wet wall and ceiling.",
+    "Typical jobs":"Kain work we dey do",
+    "Pipe and joint repairs, tap and cistern leaks, tracing the source of damp patches.":"Fix pipe and joint, tap and cistern leak, find where wet patch dey come from.",
+    "Blocked drains":"Blocked drain","Slow sinks, toilets and outlets that back up.":"Sink, toilet and outlet wey dey flow slow or dey back up.",
+    "Unblocking sinks, showers and toilets, clearing drain lines and outlets.":"Open blocked sink, shower and toilet, clear drain line and outlet.",
+    "New pipework":"New pipe work","Water lines for new homes, extensions and shops.":"Water line for new house, extension and shop.",
+    "Supply lines, kitchen and bathroom runs, PPR and PVC pipe installation.":"Supply line, kitchen and bathroom pipe, PPR and PVC pipe installation.",
+    "Toilets, basins, showers and taps fitted properly.":"Toilet, basin, shower and tap wey we fit well well.",
+    "Replacing or installing WCs, wash basins, mixers, showers and kitchen sinks.":"Change or fix WC, wash basin, mixer, shower and kitchen sink.",
+    "Tanks and pumps":"Tank and pump","Overhead tanks, borehole lines and pump connections.":"Overhead tank, borehole line and pump connection.",
+    "Tank plumbing, float valves, pump connections and borehole-to-tank lines.":"Tank plumbing, float valve, pump connection and borehole-to-tank line.",
+    "Inspections":"Checkup","Checks that catch small problems before they flood.":"Checkup wey go catch small wahala before water flood everywhere.",
+    "Leak checks and maintenance visits for homes, landlords and small businesses.":"Leak check and maintenance visit for house, landlord and small business.",
+    "Every job is different, so we quote after we hear what is wrong.":"Every work different, so we go give price after we hear wetin dey do you.",
+    "From first call to running water":"From first call to water dey run",
+    "Call or message us":"Call us or send message",
+    "Tell us what is happening. Photos on WhatsApp help us understand faster.":"Tell us wetin dey happen. Photo for WhatsApp go help us understand fast.",
+    "Agree the price":"Agree the price",
+    "You get a clear quote before work starts, so there are no surprises.":"You go know the price before work start, so no surprise.",
+    "We fix it":"We go fix am",
+    "We do the repair or installation and leave the area tidy.":"We go do the repair or installation and leave the place clean.",
+    "Check it together":"Check am together",
+    "We test the work with you before we leave.":"We go test the work with you before we comot.",
+    "Working around Port Harcourt":"We dey work for Port Harcourt",
+    "We are based at Mile 3, Mgbuoba. These are some of the areas people call us from.":"We dey Mile 3, Mgbuoba. Na some of the places people dey call us from.",
+    "Not on the list? Call to confirm we can reach you.":"Your area no dey the list? Call make we confirm say we fit reach you.",
+    "Tell us what needs fixing":"Tell us wetin need fixing",
+    "Fill in the form and it opens as a WhatsApp message to us. Prefer to talk? Call now.":"Fill the form and e go open as WhatsApp message to us. You prefer talk? Call now.",
+    "Workshop":"Our place","Hours":"Time","Get directions":"Show me the road",
+    "Call ahead to confirm availability.":"Call first make you confirm say we dey available.",
+    "Type of job":"Which kain work","What is the problem?":"Wetin be the problem?",
+    "Inspection":"Checkup","Something else":"Another thing",
+    "Send on WhatsApp":"Send am for WhatsApp",
+    "This opens WhatsApp with your message ready to send. Nothing is sent until you press send there.":"E go open WhatsApp with your message ready. Nothing go send until you press send for there.",
+    "Call now":"Call now"
+  };
+  var PH = {"Describe what you see, and when it started.":"Talk wetin you see, and when e start."};
+  var langBtn = document.getElementById('langBtn');
+  var textNodes = [], origText = new Map();
+  (function(){
+    var w = document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT, {acceptNode:function(n){
+      var p = n.parentNode;
+      if(!p || /^(SCRIPT|STYLE|NOSCRIPT)$/.test(p.nodeName) || p.closest('#langBtn') || !n.nodeValue.trim()) return NodeFilter.FILTER_REJECT;
+      return NodeFilter.FILTER_ACCEPT;
+    }});
+    while(w.nextNode()){ textNodes.push(w.currentNode); origText.set(w.currentNode, w.currentNode.nodeValue); }
+  })();
+  var area = document.querySelector('textarea');
+  var enPh = area.getAttribute('placeholder');
+  var lang = 'en';
+  function setLang(l){
+    lang = l;
+    textNodes.forEach(function(n){
+      var o = origText.get(n), key = o.trim();
+      n.nodeValue = (l === 'pcm' && PCM[key]) ? o.replace(key, PCM[key]) : o;
+    });
+    area.setAttribute('placeholder', (l === 'pcm' && PH[enPh]) ? PH[enPh] : enPh);
+    document.documentElement.lang = l === 'pcm' ? 'pcm' : 'en';
+    langBtn.textContent = l === 'pcm' ? 'English' : 'Pidgin';
+    langBtn.setAttribute('aria-label', l === 'pcm' ? 'Switch to English' : 'Switch to Nigerian Pidgin');
+    try { localStorage.setItem('bp-lang', l); } catch(e){}
+  }
+  langBtn.addEventListener('click', function(){ setLang(lang === 'en' ? 'pcm' : 'en'); });
+  try { if(localStorage.getItem('bp-lang') === 'pcm') setLang('pcm'); } catch(e){}
+
+  /* ---------- WhatsApp quote form ---------- */
+  document.getElementById('quote').addEventListener('submit', function(e){
+    e.preventDefault();
+    var f = e.target;
+    var msg = 'Hello Brightful Plumbing Concerns,\n\n' +
+      'Name: ' + f.name.value.trim() + '\n' +
+      'Phone: ' + f.phone.value.trim() + '\n' +
+      'Area: ' + (f.area.value.trim() || 'Not given') + '\n' +
+      'Job: ' + f.job.value + '\n' +
+      'Details: ' + (f.details.value.trim() || 'Not given');
+    window.open('https://wa.me/2348101102829?text=' + encodeURIComponent(msg), '_blank', 'noopener');
+  });
+
+  /* ---------- scroll progress ---------- */
+  function progress(){
+    var max = document.documentElement.scrollHeight - window.innerHeight;
+    return max > 0 ? Math.min(1, Math.max(0, window.scrollY / max)) : 0;
+  }
+
+  /* ---------- 3D tilt of panels as they pass through the viewport ---------- */
+  function tiltUpdate(){
+    if(reduce) return;
+    var vh = window.innerHeight;
+    tilts.forEach(function(el){
+      var r = el.getBoundingClientRect();
+      var d = ((r.top + Math.min(r.height, vh) / 2) - vh / 2) / vh;
+      d = Math.max(-1, Math.min(1, d));
+      el.style.transform = 'perspective(1100px) rotateX(' + (-d * 7).toFixed(2) + 'deg) translateZ(' + (-Math.abs(d) * 50).toFixed(1) + 'px)';
+    });
+  }
+
+  /* ---------- Three.js scene ---------- */
+  var ok = typeof THREE !== 'undefined';
+  var renderer;
+  if(ok){
+    try { renderer = new THREE.WebGLRenderer({canvas: canvas, antialias: true}); }
+    catch(err){ ok = false; }
+  }
+  if(!ok){
+    document.documentElement.classList.add('no3d');
+    window.addEventListener('scroll', function(){ fill.style.transform = 'scaleY(' + progress() + ')'; tiltUpdate(); }, {passive:true});
+    tiltUpdate();
+    return;
+  }
+
+  var scene = new THREE.Scene();
+  scene.background = new THREE.Color(0x04141a);
+  scene.fog = new THREE.Fog(0x04141a, 18, 95);
+  var camera = new THREE.PerspectiveCamera(50, 1, 0.1, 400);
+  scene.add(camera);
+
+  scene.add(new THREE.AmbientLight(0x88aabb, 0.7));
+  scene.add(new THREE.HemisphereLight(0xbfefff, 0x3a1e0a, 0.6));
+  var sun = new THREE.DirectionalLight(0xffffff, 1.15);
+  sun.position.set(12, 22, 10);
+  scene.add(sun);
+  var glow = new THREE.PointLight(0x4fd1e8, 1.5, 70);
+  camera.add(glow);
+
+  var V = THREE.Vector3;
+  var curve = new THREE.CatmullRomCurve3([
+    new V(0,0,0), new V(0,0,-30), new V(14,0,-46), new V(14,10,-62),
+    new V(-6,10,-80), new V(-6,-6,-98), new V(10,-6,-118), new V(10,4,-138), new V(0,4,-156)
+  ], false, 'catmullrom', 0.5);
+
+  var copper = new THREE.MeshStandardMaterial({color:0xc57b3f, metalness:0.55, roughness:0.38, emissive:0x2a1406});
+  var darker = new THREE.MeshStandardMaterial({color:0x8f5224, metalness:0.6, roughness:0.45, emissive:0x1c0d04});
+  var pipe = new THREE.Mesh(new THREE.TubeGeometry(curve, 700, 1.4, 28, false), copper);
+  scene.add(pipe);
+
+  var Y = new V(0,1,0), Z = new V(0,0,1);
+  function place(mesh, u, axis){
+    mesh.position.copy(curve.getPointAt(u));
+    mesh.quaternion.setFromUnitVectors(axis, curve.getTangentAt(u));
+  }
+
+  // couplings
+  [0.012,0.11,0.2,0.3,0.4,0.5,0.61,0.71,0.82,0.92].forEach(function(u){
+    var c = new THREE.Mesh(new THREE.CylinderGeometry(1.85,1.85,1.3,32), darker);
+    place(c,u,Y); scene.add(c);
+    [-0.75,0.75].forEach(function(o){
+      var r = new THREE.Mesh(new THREE.CylinderGeometry(1.95,1.95,0.22,32), copper);
+      place(r,u,Y);
+      r.translateY(o);
+      scene.add(r);
+    });
+  });
+
+  // valves with hand wheels
+  var wheels = [];
+  [0.16,0.36,0.56,0.76,0.95].forEach(function(u,i){
+    var p = curve.getPointAt(u), tg = curve.getTangentAt(u);
+    var side = new V().crossVectors(tg, new V(0,1,0)).normalize();
+    if(i % 2) side.negate();
+    var stub = new THREE.Mesh(new THREE.CylinderGeometry(0.6,0.6,4,20), darker);
+    stub.position.copy(p).addScaledVector(side, 2.6);
+    stub.quaternion.setFromUnitVectors(Y, side);
+    scene.add(stub);
+    var g = new THREE.Group();
+    g.position.copy(p).addScaledVector(side, 4.9);
+    g.quaternion.setFromUnitVectors(Z, side);
+    var ring = new THREE.Mesh(new THREE.TorusGeometry(1.4,0.2,12,36), copper);
+    var s1 = new THREE.Mesh(new THREE.BoxGeometry(2.8,0.22,0.22), copper);
+    var s2 = new THREE.Mesh(new THREE.BoxGeometry(0.22,2.8,0.22), copper);
+    ring.add(s1); ring.add(s2);
+    g.add(ring); scene.add(g);
+    wheels.push(ring);
+  });
+
+  // water pulses travelling along the pipe
+  var pulseMat = new THREE.MeshBasicMaterial({color:0x4fd1e8, transparent:true, opacity:0.85});
+  var pulses = [];
+  for(var i=0;i<6;i++){
+    var p = new THREE.Mesh(new THREE.TorusGeometry(1.62,0.09,8,40), pulseMat);
+    scene.add(p); pulses.push(p);
+  }
+
+  // droplets
+  var N = 650, pos = new Float32Array(N*3), base = new Float32Array(N);
+  for(var k=0;k<N;k++){
+    var c = curve.getPointAt(Math.random());
+    var a = Math.random()*Math.PI*2, rad = 4 + Math.random()*14;
+    pos[k*3]   = c.x + Math.cos(a)*rad;
+    pos[k*3+1] = c.y + Math.sin(a)*rad;
+    pos[k*3+2] = c.z + (Math.random()-0.5)*10;
+    base[k] = pos[k*3+1];
+  }
+  var pg = new THREE.BufferGeometry();
+  pg.setAttribute('position', new THREE.BufferAttribute(pos, 3));
+  var drops = new THREE.Points(pg, new THREE.PointsMaterial({color:0x4fd1e8, size:0.5, transparent:true, opacity:0.65, depthWrite:false, blending:THREE.AdditiveBlending}));
+  scene.add(drops);
+
+  function resize(){
+    var w = window.innerWidth, h = window.innerHeight;
+    renderer.setPixelRatio(Math.min(window.devicePixelRatio || 1, 2));
+    renderer.setSize(w, h, false);
+    camera.aspect = w / h;
+    if(w > 900){ camera.setViewOffset(w, h, -w * 0.17, 0, w, h); } else { camera.clearViewOffset(); }
+    camera.updateProjectionMatrix();
+  }
+  window.addEventListener('resize', resize);
+  resize();
+
+  var cur = progress(), t0 = performance.now();
+  var right = new V(), up = new V(0,1,0), cp = new V(), ahead = new V();
+
+  function frame(now){
+    var time = reduce ? 0 : (now - t0) / 1000;
+    var target = progress();
+    cur += (target - cur) * (reduce ? 1 : 0.06);
+    var u = Math.min(cur, 1) * 0.955;
+
+    var tg = curve.getTangentAt(u);
+    right.crossVectors(tg, up).normalize();
+    cp.copy(curve.getPointAt(u)).addScaledVector(tg, -10).addScaledVector(right, -3.5).addScaledVector(up, 3.2);
+    ahead.copy(curve.getPointAt(Math.min(u + 0.05, 1)));
+    camera.position.copy(cp);
+    camera.lookAt(ahead);
+    camera.rotateZ(Math.sin(cur * 11) * 0.09);
+
+    wheels.forEach(function(w, i){ w.rotation.z = cur * 26 + i; });
+    pulses.forEach(function(p, i){ place(p, (time * 0.022 + i / pulses.length) % 1, Z); });
+    if(!reduce){
+      var arr = pg.attributes.position.array;
+      for(var j=0;j<N;j++){ arr[j*3+1] = base[j] + Math.sin(time * 0.6 + j) * 0.8; }
+      pg.attributes.position.needsUpdate = true;
+    }
+
+    fill.style.transform = 'scaleY(' + cur.toFixed(3) + ')';
+    tiltUpdate();
+    renderer.render(scene, camera);
+    requestAnimationFrame(frame);
+  }
+  requestAnimationFrame(frame);
+})();
+</script>
+</body>
+</html>
